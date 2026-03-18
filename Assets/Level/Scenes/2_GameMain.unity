@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 58512546}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 71193437}
   m_Layer: 0
   m_Name: TestMap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29014,6 +29014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842678366}
+  - component: {fileID: 842678367}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -29036,6 +29037,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 273219624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842678367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842678365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fe035cdd8465545bcaf6ebe8795ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObj: {fileID: 58512539}
+  playerController: {fileID: 0}
+  playerStats: {fileID: 11400000, guid: 04651e9e4914112429578273ebb61200, type: 2}
+  enemyStats: {fileID: 11400000, guid: 9fa503a5225c11242929f38c77f7cd96, type: 2}
+  playerStatsRuntime:
+    speed: 0
+    dashSpeed: 0
+    jumpForce: 0
+    attack: 0
+    maxHP: 0
+    currentHP: 0
 --- !u!1 &1733954245
 GameObject:
   m_ObjectHideFlags: 0
@@ -29360,7 +29384,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2145188219}
-  - {fileID: 58512542}
   - {fileID: 2134495596}
   - {fileID: 273219624}
   - {fileID: 752380223}
+  - {fileID: 58512542}

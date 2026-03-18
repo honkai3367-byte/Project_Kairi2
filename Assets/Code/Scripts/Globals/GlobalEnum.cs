@@ -8,6 +8,7 @@ namespace EnumType
 		Idle = 0,       // 기본
 		Run,            // 달리기
 		Jump,           // 점프
+		Dash,			// 대쉬
 		Land,           // 착지
 		Damaged,        // 데미지 받은 상태
 	}
